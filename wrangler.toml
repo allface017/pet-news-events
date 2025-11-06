@@ -1,0 +1,13 @@
+name = "pet-news-events"
+main = "src/index.ts"
+compatibility_date = "2025-11-05"
+workers_dev = true
+
+[env.development]
+vars = { ENVIRONMENT = "development" }
+
+[env.production]
+vars = { ENVIRONMENT = "production" }
+routes = [
+  { pattern = "api.example.com/*", zone_name = "example.com" }
+]
